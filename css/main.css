@@ -1,0 +1,92 @@
+body{ background-color: #FFF5E8;
+margin-top: 5%;
+}
+
+#dice_space{
+
+}
+/*dice attributes*/
+#dice_space div{
+  background-color: lightblue;
+  border: 2px solid #5491B2;
+  border-radius:5px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  animation: roll 2s infinite;
+  transform: rotate(30deg);
+  opacity: .7;
+  margin-top: 5px;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.height_width{
+  height: 80px;
+  width: 80px;
+
+}
+/*dot attributes*/
+.dot{
+  height: 16px;
+  width: 16px;
+  background-color: #38B9FF;
+  display: block;
+  border-radius: 100%;
+}
+/*dot positions*/
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.top_left{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translateY(-50%)translateX(-50%);
+}
+
+.bottom_right{
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  transform: translateY(-50%)translateX(-50%);
+}
+
+.top_right{
+  position: absolute;
+  top: 25%;
+  right: 25%;
+  transform: translateY(-50%) translateX(50%);
+}
+
+.bottom_left{
+  position: absolute;
+  bottom: 25%;
+  left: 25%;
+  transform: translateY(50%) translateX(-50%);
+}
+
+.middle_right{
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translateX(175%) translateY(50%);
+}
+
+.middle_left{
+  position: absolute;
+  left: -25%;
+  bottom: 50%;
+  transform: translateX(200%) translateY(50%);;
+}
